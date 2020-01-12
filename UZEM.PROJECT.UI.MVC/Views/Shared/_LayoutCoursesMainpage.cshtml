@@ -1,0 +1,120 @@
+﻿<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>UZEM</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <!-- Place favicon.ico in the root directory -->
+    <!-- CSS here -->
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/magnific-popup.css">
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/themify-icons.css">
+    <link rel="stylesheet" href="~/Content/nice-select.css">
+    <link rel="stylesheet" href="~/Content/flaticon.css">
+    <link rel="stylesheet" href="~/Content/gijgo.css">
+    <link rel="stylesheet" href="~/Content/animate.css">
+    <link rel="stylesheet" href="~/Content/slicknav.css">
+    <link rel="stylesheet" href="~/Content/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+<body>
+    <header>
+        <div class="row">
+            <h1 style="float:left;" class="col-lg-6">Kurs Taslak</h1>
+            <div style="float:left;" class="col-lg-6">
+                <div class="col-lg-2" style="float:left;">
+
+                </div>
+                <div class="col-lg-2" style="float:left;">
+
+                </div>
+                <div class="col-lg-2" style="float:left;">
+
+                </div>
+                <div class="col-lg-2 " style="float:left;">
+                    @Html.ActionLink("Ön İzleme", "actionname", "contName", "", new { @class = "btn btn-info" })
+                </div>
+                <div class="col-lg-2" style="float:left;">
+                    @Html.ActionLink("Kaydet", "SaveCourse", "Home", "", new { @class = "btn btn-info" })
+                </div>
+                <div class="col-lg-2" style="float:left;">
+                    @Html.ActionLink("Çıkış", "actionname", "contName", "", new { @class = "btn btn-info" })
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr />
+    <section>
+        <article>
+            <div class="col-lg-3" style="float:left">
+                <div>
+                    <a href="~/Home/HowToCreate">Kurs Nasıl Oluşturulur?</a>
+                </div>
+                <div>
+                    <a href="~/Home/OpeningPage">Kurs Açılış Sayfası</a>
+                </div>
+                <div>
+                    <a href="~/Home/CoursePlan">Kurs Planı</a>
+                </div>
+                <div>
+                    <a href="~/Home/AddingDetails">İçerik Ekleme</a>
+                </div>
+            </div>
+            <div class="col-lg-9" style="float:left">
+                @RenderBody()
+            </div>
+        </article>
+    </section>
+    <br />
+    <div class="row">     
+        <footer class="container-fluid footer mt-30" style="background-color:whitesmoke !important; margin-bottom:10px; " >
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a href="~/Home/Index/"><img src="~/img/s.png" alt="~/Home/Index/"></a>
+                    </div>
+                    <div class="col">
+                        <a href="#">Gizlilik Politikası</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">Kişisel Verilerin Korunması</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- JS here -->
+    <script src="~/Scripts/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="~/Scripts/vendor/jquery-1.12.4.min.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/owl.carousel.min.js"></script>
+    <script src="~/Scripts/isotope.pkgd.min.js"></script>
+    <script src="~/Scripts/ajax-form.js"></script>
+    <script src="~/Scripts/waypoints.min.js"></script>
+    <script src="~/Scripts/jquery.counterup.min.js"></script>
+    <script src="~/Scripts/imagesloaded.pkgd.min.js"></script>
+    <script src="~/Scripts/scrollIt.js"></script>
+    <script src="~/Scripts/jquery.scrollUp.min.js"></script>
+    <script src="~/Scripts/wow.min.js"></script>
+    <script src="~/Scripts/nice-select.min.js"></script>
+    <script src="~/Scripts/jquery.slicknav.min.js"></script>
+    <script src="~/Scripts/jquery.magnific-popup.min.js"></script>
+    <script src="~/Scripts/plugins.js"></script>
+    <script src="~/Scripts/gijgo.min.js"></script>
+    <!--contact js-->
+    <script src="~/Scripts/contact.js"></script>
+    <script src="~/Scripts/jquery.ajaxchimp.min.js"></script>
+    <script src="~/Scripts/jquery.form.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/mail-script.js"></script>
+    <script src="~/Scripts/main.js"></script>
+</body>
+</html>

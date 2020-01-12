@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutWithUser.cshtml";
+}
+
+<br />
+<script>var counter = 3;</script>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <b>Popüler Kurslar</b>
+        </div>
+        <br>
+        <div class="panel-body">
+            @{ int counter = 4;
+                foreach (CourseClass item in Model)
+                {
+
+                    if (counter == 0)
+                    {
+                        break;
+                    }
+                    --counter;
+
+                    <div class="col-lg-3" style="border:thin; float:left">
+                        <div style="width:50%; height:50%; float:left ">
+                            <img style="width:100%;height:100%;" src="@item.Photo" />
+                        </div>
+                        <div style="float:left; margin-top: 20px; ">
+                            <b>@item.Name</b>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+<br />
+<div class="container" style="overflow-y:scroll; border:thin black ">
+    @foreach (CourseClass item in Model)
+    {
+        <div class="panel panel-default col-md-12" style="border:solid 1px;margin-top:4px;">
+            <div class="panel-body">
+                <div style="border:thin;">
+                    <div class="col-md-12" style="text-align:center;">
+                        <b>@item.Name</b>
+                    </div>
+                    <div>
+                        <img style="width:25%;" src="@item.Photo" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

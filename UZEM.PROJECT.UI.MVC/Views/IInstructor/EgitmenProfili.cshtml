@@ -1,0 +1,50 @@
+﻿@model UZEM_PROJECT.Model.InstructorClass
+@{
+    ViewBag.Title = "EgitmenProfili";
+    Layout = "~/Views/Shared/_LayoutEgitmenProfil.cshtml";
+}
+
+<h2>EgitmenProfili</h2>
+
+<form class="container" method="post">
+    <div>
+        <label>Adınız : </label>
+        @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+    </div>
+    <br />
+    <div>
+        <label>Soyadız</label>
+        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+    </div>
+    <br />
+    <div>
+        <label>E-mailiniz:</label>
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+    </div>
+    <br />
+    <div>
+        <label>Notunuz: </label>
+        @Html.TextAreaFor(m => m.Note, new { @class = "form-control" })
+    </div>
+    <br />
+    <div>
+        <label>Öz Geçmişiniz:</label>
+        @Html.TextBoxFor(m => m.Cv, new { @class = "form-control" })
+        <button id="CvDosya" class=" form-control btn-danger">Dosya Yükle</button>
+    </div>
+    <br />
+    <div>
+        <label>Video:</label>
+        @Html.TextBoxFor(m => m.PromotionalVideo, new { @class = "form-control" })
+        <button id="VideoDosya" class=" form-control btn-danger">Dosya Yükle</button>
+    </div>
+    <div><p>Özgeçmiş ve video yüklemek zorunludur.Eğitim videolarınızın tanıtım niteliğinde minimum 5 dakika maximum  20 dakika uzunluğunda videoları yükleyebilirsiniz  </p></div>
+    <button id="kaydet" class=" form-control btn-info">Kaydet</button>
+
+    <script>
+                $("#kaydet").click(function () {
+                    alert("Müşteri Ekleme İşlemi Tamamlandı");
+                });
+    </script>
+
+</form>

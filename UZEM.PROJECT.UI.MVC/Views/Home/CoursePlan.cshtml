@@ -1,0 +1,20 @@
+﻿@model UZEM_PROJECT.Model.CourseClass
+@{
+    ViewBag.Title = "CoursePlan";
+    Layout = "~/Views/Shared/_LayoutCoursesMainpage.cshtml";
+}
+
+<h2>Kurs Planı</h2>
+<p>Burada yazdığınız açıklamalar, öğrencilerin kursunuzun onlara uygun olup olmadığına karar vermelerine yardımcı olur.</p>
+<p>Öğrenciler kursunuzda ne öğrenecek?</p>
+@Html.TextAreaFor(Model => Model.Content)
+
+<p>Kurs gereksinimleri ve ön koşulları var mı?</p>
+@Html.TextAreaFor(Model => Model.RequirementList)
+
+<p>Kurs Mesajı</p>
+<p>Kurs içeriği ile etkileşime geçmeleri için teşvik etmek için öğrenciler kursunuza katıldığında veya kursu tamamladığında otomatik olarak gönderilecek mesajlar(isteğe bağlı) yazın.</p>
+<p>Karşılama Mesajı</p>
+@Html.TextArea("Karşılama", new { @placeholder = "500", @style = "text-align: right;" })
+<p>Tebrik Mesajı</p>
+@Html.TextArea("Tebrik", new { @placeholder = "500", @style = "text-align: right;" })

@@ -1,0 +1,28 @@
+﻿@model UZEM_PROJECT.Model.LessonClass
+@{
+    ViewBag.Title = "AddingDetails";
+    Layout = "~/Views/Shared/_LayoutCoursesMainpage.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+<h2>İçerik Ekleme</h2>
+<p>Burası; ders, kurs bölümü, ödev vb. kurs içeriklerini eklediğiniz yerdir.</p>
+
+<div class="panel panel-default" style="border:solid black; padding:10px;">
+    <p>Bölüm 1: @Html.TextBoxFor(Model => Model.Name)<i class="fas fa-chevron-circle-up" style="color:black; float:right; "></i></p>
+    <div class="panel panel-default " style="border:solid black; padding:10px;">
+        <p>Ders 1: &emsp;&emsp;&emsp;&emsp;&emsp;@Html.TextBoxFor(Model => Model.Name)<i class="fas fa-chevron-circle-up" style="color:black; float:right; "></i> </p>
+        <p>Ders Açıklaması: &emsp; @Html.TextBoxFor(Model => Model.Description) </p>
+        <p>İçeriklerden birine yükleme yapabilirsiniz, isteğe bağlı hepsine de yükleme yapılabilir.</p>
+        <p>Video: &emsp;@Html.TextBoxFor(Model => Model.Video) <button>Dosya Yükle</button></p>
+        <p>Slayt:&emsp;&emsp;@Html.TextBoxFor(Model => Model.Slide) <button>Dosya Yükle</button></p>
+        <p>Makale: &emsp;@Html.TextBoxFor(Model => Model.Article) <button>Dosya Yükle</button></p>
+    </div>
+    <div style="border:solid black;">
+        <p><i class="fas fa-plus" style="color:black"></i>Ders<i class="fas fa-chevron-circle-down" style="color:black; float:right; "></i></p>
+    </div>
+</div>
+<div style="border:solid black">
+    <p><i class="fas fa-plus" style="color:black"></i>Bölüm<i class="fas fa-chevron-circle-down" style="color:black; float:right; "></i></p>
+</div>
+@Html.ActionLink("İnceleme için Gönder","SubmitForReview","Home","",new { @class = "btn btn-info mt-10" })
+

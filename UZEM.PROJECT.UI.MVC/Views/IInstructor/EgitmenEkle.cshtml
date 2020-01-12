@@ -1,0 +1,59 @@
+﻿
+@model UZEM_PROJECT.Model.InstructorClass
+
+@{
+    ViewBag.Title = "EgitmenEkle";
+
+
+
+}
+
+
+<h2>EgitmenEkle</h2>
+<form class="form-group" method="post">
+
+    
+    <div>
+        <label>Ad:</label>
+        <input type="text" class="form-control" name="name" value="@Model.FirstName" />
+
+    </div>
+    <div>
+        <label>Soyad:</label>
+        <input type="text" class="form-control" name="Soyad" value="@Model.LastName" />
+
+    </div>
+
+    <div>
+        <label>Profil Fotoğrafı:</label>
+        <input type="text" class="form-control" name="Ad" />
+        <br />
+        <input type="button" class="btn-danger" value="Dosya Seç" name="Ad" />
+        <input type="button" class="btn-danger" value="Kaldır" name="Ad" />
+
+    </div>
+
+    <br />
+    <div>
+        <label>S:</label>
+        <input type="text" class="form-control" name="Soyad" value="@Model.LastName" />
+
+    </div>
+
+
+    <div>
+        <label>Özgeçmiş</label>
+        <input type="text" class="form-control" name="CV" />
+
+    </div>
+    <br />
+
+    <div>
+        <button id="Kaydet" class="form-group btn-info">Eğitmen Olarak Kaydet</button>
+
+    </div>
+
+
+
+
+</form>

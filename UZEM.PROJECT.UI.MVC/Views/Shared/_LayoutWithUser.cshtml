@@ -1,0 +1,210 @@
+﻿<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>UZEM</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <!-- Place favicon.ico in the root directory -->
+    <!-- CSS here -->
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/magnific-popup.css">
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/themify-icons.css">
+    <link rel="stylesheet" href="~/Content/nice-select.css">
+    <link rel="stylesheet" href="~/Content/flaticon.css">
+    <link rel="stylesheet" href="~/Content/gijgo.css">
+    <link rel="stylesheet" href="~/Content/animate.css">
+    <link rel="stylesheet" href="~/Content/slicknav.css">
+    <link rel="stylesheet" href="~/Content/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: sticky; margin-top:5px; ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a href="~/Home/Index/"><img src="~/img/s.png" alt="~/Home/Index/" style="margin-right:300px"></a>
+
+                <form class="form-inline ">
+
+                    <!-- Search form -->
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="margin-right:110px; width:500px;">
+                    <a href="~/IInstructor/EgitmenBasvuru" style="font-size:20px; margin-right:20px; color:blue">Eğitmen Olun </a>
+                    <a href="#" style="font-size:20px; margin-right:20px; color:blue">Kurslarım </a>
+                    <a href="#">  <i class="fas fa-shopping-cart" style="font-size:30px; margin-right:20px"></i></a>
+
+                    <a href="#"> <i class="far fa-heart" style="font-size:30px; margin-right:20px"></i> </a>
+
+                    <a href="#">
+                        <i class="far fa-bell" style="font-size:30px; margin-right:20px;"></i>
+                    </a>
+
+                    <a href="~/IInstructor/EgitmenProfili">   <i class="far fa-circle" style="font-size:30px"></i></a>
+
+                    @*<a href="~/Account/Logout"><i class="btn btn-danger">Logout</i></a>*@
+                   
+                </form>
+            </div>
+
+        </nav>
+        <nav>
+            <div style="border-style:solid">
+                <a href="" style="margin-left:5px"> Yazılım Geliştirme </a>
+                <a href="" style="margin-left:15px">BT ve Yazılım </a>
+                <a href="" style="margin-left:15px">Tasarım </a>
+                <a href="" style="margin-left:15px">Kişisel Gelişim  </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <section>
+        <article>
+            <div class="container">
+                @RenderBody()
+            </div>
+        </article>
+    </section>
+
+
+
+    <footer style="background-color: lightblue;position:fixed;bottom:0;" class="footer fixed-bottom">
+        <div class="container">
+            <div class="col-lg-3" style="float:left;">
+                <ul>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#"> Eğitmen Olun</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3" style="float:left;">
+                <ul>
+                    <li><a href="#">Popüler Kurslar</a></li>
+                    <li><a href="#">Gizlilik Politikası</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3" style="float:left;">
+                <ul>
+                    <li><a href="#">Kişisel Verilerin Korunması</a></li>
+                    <li><a href="#">Mesafeli Satış Sözleşmesi</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3" style="float:left">
+                <ul>
+                    <li><a href="#">İade Şartları</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    @*<footer class="footer footer_bg_1">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xl-1 offset-xl-1 col-md-10 col-lg-3">
+                            <div class="footer_widget">
+
+                                <ul>
+                                    <li><a href="#">Hakkımızda</a></li>
+                                    <li><a href="#"> Eğitmen Olun</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-2 offset-xl-1 col-md-10 col-lg-3">
+                            <div class="footer_widget">
+
+                                <ul>
+                                    <li><a href="#">Popüler Kurslar</a></li>
+                                    <li><a href="#"> Gizlilik Politikası </a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 offset-xl-1 col-md-10 col-lg-3">
+                            <div class="footer_widget">
+
+                                <ul>
+                                    <li><a href="#">Kişisel Verilerin Korunması</a></li>
+                                    <li><a href="#"> Mesafeli Satış Sözleşmesi</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-2 offset-xl-1 col-md-10 col-lg-3">
+                            <div class="footer_widget">
+
+                                <ul>
+                                    <li><a href="#">İade Şartları</a></li>
+                                    <li><a href="#"> İletişim</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right_text">
+                <div class="container">
+                    <div class="footer_border"></div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <p class="copy_right text-center">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>*@
+
+    <!-- JS here -->
+    <script src="~/Scripts/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="~/Scripts/vendor/jquery-1.12.4.min.js"></script>
+    @*<script src="~/Scripts/popper.min.js"></script>*@
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    @*<script src="~/Scripts/bootstrap.min.js"></script>*@
+    <script src="~/Scripts/owl.carousel.min.js"></script>
+    <script src="~/Scripts/isotope.pkgd.min.js"></script>
+    <script src="~/Scripts/ajax-form.js"></script>
+    <script src="~/Scripts/waypoints.min.js"></script>
+    <script src="~/Scripts/jquery.counterup.min.js"></script>
+    <script src="~/Scripts/imagesloaded.pkgd.min.js"></script>
+    <script src="~/Scripts/scrollIt.js"></script>
+    <script src="~/Scripts/jquery.scrollUp.min.js"></script>
+    <script src="~/Scripts/wow.min.js"></script>
+    <script src="~/Scripts/nice-select.min.js"></script>
+    <script src="~/Scripts/jquery.slicknav.min.js"></script>
+    <script src="~/Scripts/jquery.magnific-popup.min.js"></script>
+    <script src="~/Scripts/plugins.js"></script>
+    <script src="~/Scripts/gijgo.min.js"></script>
+    <!--contact js-->
+    <script src="~/Scripts/contact.js"></script>
+    <script src="~/Scripts/jquery.ajaxchimp.min.js"></script>
+    <script src="~/Scripts/jquery.form.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/mail-script.js"></script>
+    <script src="~/Scripts/main.js"></script>
+    @RenderSection("scripts", false)
+</body>
+</html>

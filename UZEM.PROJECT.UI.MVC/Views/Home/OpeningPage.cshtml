@@ -1,0 +1,25 @@
+﻿@model UZEM_PROJECT.Model.CourseClass
+@{
+    ViewBag.Title = "OpeningPage";
+    Layout = "~/Views/Shared/_LayoutCoursesMainpage.cshtml";
+}
+
+<h2>Kurs Açılış Sayfası</h2>
+<p>Burada yazdığınız açıklamalar, öğrencilerin kursunuzun onlara uygun olup olmadığına karar vermelerine yardımcı olur.</p>
+@{
+    List<Level> levels = new List<Level>() { Level.Advanced, Level.All, Level.Beginner, Level.Medium };
+    List<string> categories = new List<string> { "Programlama Dilleri", "Web Geliştirme", "Veri Bilimi", "Yazılım Testi" };
+    List<double> prices = new List<double>() { 0, 50, 100, 150, 200, 250, 300 };
+}
+@using (Html.BeginForm("OpeningPage","Home",FormMethod.Post))
+{
+
+    <p>Kurs Başlığı &emsp;&emsp; @Html.TextBoxFor(Model => Model.MainTitle.Name, new { @placeholder = "60", @style = "text-align: right;" }) </p>
+    <p>Kurs Alt Başlığı &emsp; @Html.TextBoxFor(Model => Model.TopTitle.Name, new { @placeholder = "100", @style = "text-align: right;" }) </p>
+    <p>Kurs Açıklaması&emsp; @Html.TextBoxFor(Model => Model.Content, new { @placeholder = "200", @style = "text-align: right;" }) </p>
+    <p>Temel Bilgiler&emsp;&emsp;@Html.DropDownListFor(Model => Model.Level, new SelectList(levels)) &emsp; @Html.DropDownListFor(Model => Model.Category, new SelectList(categories)) </p>
+    <p>Kurs Görüntüsü&emsp;@Html.TextBoxFor(Model => Model.Photo, new { @placeholder = "URL giriniz" }) <button>Dosya Yükle</button></p>
+    <p>Tanıtım Videosu&emsp;@Html.TextBoxFor(Model => Model.PromotionVideo, new { @placeholder = "URL giriniz" }) <button>Dosya Yükle</button></p>
+    <p>Fiyatlandırma&emsp;&emsp;@Html.DropDownListFor(Model => Model.Price, new SelectList(prices))</p>
+
+}

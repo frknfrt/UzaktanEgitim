@@ -1,0 +1,24 @@
+﻿@{ ViewBag.Title = "_LayoutEgitmenProfil";
+    Layout = "~/Views/Shared/_Layout.cshtml";}
+
+ 
+<div class="col-md-12">
+    <br />
+    <div class="col-md-3" style="background-color:lightgray; height:200px; float:left">
+        @Html.ActionLink("Profil","EgitmenProfili","IInstructor")
+        <br />
+        @Html.ActionLink("Kurs","Kurs","IInstructor")
+        <br />
+        @Html.ActionLink("Kart Bilgileri","KartBilgileri","IInstructor")
+        <br />
+        @Html.ActionLink("Hesap","Hesap","IInstructor")
+
+
+    </div>
+    <div class="col-md-9" style="background-color:azure; height:400px; float:left">
+        @RenderBody()
+
+
+    </div>
+
+</div>
