@@ -1,0 +1,44 @@
+﻿@{ ViewBag.Title = "_LayoutCoursesMain";
+    Layout = "~/Views/Shared/_LayoutWithUser.cshtml";}
+
+
+<div class="col-md-12">
+    <div class="col-md-8">
+        <h1>Kurs Taslak</h1>
+    </div>
+
+    <div class="col-md-4 " style="float:right">
+        <button class="btn btn-danger">Ön İzleme</button>
+        <button class="btn btn-danger">Kaydet</button>
+        <button class="btn btn-danger">Çıkış</button>
+
+
+    </div>
+
+</div>
+<br />
+<hr />
+
+
+<div class="col-md-12">
+    <br />
+
+    <div class="col-md-3" style="background-color:lightgray; height:200px; float:left">
+
+        @Html.ActionLink("Kurs Nasıl Oluşturulur", "HowToCreate", "Home")
+        <br />
+        @Html.ActionLink("Kurs Açılış Sayfası", "OpeningPage", "Home")
+        <br />
+        @Html.ActionLink("Kurs Planı", "CoursePlan", "Home")
+        <br />
+        @Html.ActionLink("İçerik Ekleme", "AddingDetails", "Home")
+
+
+    </div>
+    <div class="col-md-9" style="background-color:azure; height:800px; float:left">
+        @RenderBody()
+
+
+    </div>
+
+</div>

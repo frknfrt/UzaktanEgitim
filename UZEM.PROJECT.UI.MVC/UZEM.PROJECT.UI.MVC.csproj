@@ -322,18 +322,19 @@
     <Content Include="Views\IInstructor\EgitmenProfili.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
-	<Content Include="Views\Shared\_LayoutLogin.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
     <Content Include="Views\Shared\_LayoutSignin.cshtml" />
     <Content Include="Views\Shared\_LayoutWithUser.cshtml" />
     <Content Include="Views\Account\Logout.cshtml" />
     <Content Include="Views\Home\Index2.cshtml" />
-	<Content Include="Views\Shared\_LayoutCoursesMainpage.cshtml" />
+    <Content Include="Views\Shared\_LayoutCoursesMainpage.cshtml" />
     <Content Include="Views\Home\Courses.cshtml" />
     <Content Include="Views\Home\HowToCreate.cshtml" />
     <Content Include="Views\Home\OpeningPage.cshtml" />
     <Content Include="Views\Home\CoursePlan.cshtml" />
     <Content Include="Views\Home\AddingDetails.cshtml" />
     <Content Include="Views\Home\SubmitForReview.cshtml" />
+    <Content Include="Views\Shared\_LayoutCoursesMain.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
