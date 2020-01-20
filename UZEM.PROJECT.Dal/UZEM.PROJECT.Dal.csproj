@@ -67,6 +67,7 @@
     <Compile Include="Concrete\EntityFramework\UserAndCourseMapping.cs" />
     <Compile Include="Concrete\EntityFramework\UserRepository.cs" />
     <Compile Include="Concrete\UzemProjectDbContext.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

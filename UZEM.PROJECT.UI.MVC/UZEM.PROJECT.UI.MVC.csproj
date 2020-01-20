@@ -1,6 +1,6 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -64,6 +64,9 @@
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.3\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -134,9 +137,6 @@
     <Reference Include="System.Web.Mvc">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\animate.css" />
@@ -156,16 +156,33 @@
     <Content Include="Content\style.css" />
     <Content Include="Content\theme-default.css" />
     <Content Include="Content\themify-icons.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\style.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="icon-fonts\fontawesome-webfont.svg" />
     <Content Include="img\about\1.png" />
     <Content Include="img\about\2.png" />
+    <Content Include="img\authors\1.jpg" />
+    <Content Include="img\authors\2.jpg" />
+    <Content Include="img\authors\3.jpg" />
+    <Content Include="img\authors\4.jpg" />
+    <Content Include="img\authors\5.jpg" />
+    <Content Include="img\authors\6.jpg" />
+    <Content Include="img\authors\7.jpg" />
+    <Content Include="img\authors\8.jpg" />
     <Content Include="img\banner\banner.png" />
     <Content Include="img\banner\bradcam.png" />
     <Content Include="img\banner\bradcam2.png" />
     <Content Include="img\banner\edu_ilastration.png" />
     <Content Include="img\banner\footer_bg.png" />
     <Content Include="img\banner\img.png" />
+    <Content Include="img\bg.jpg" />
+    <Content Include="img\blog\1.jpg" />
+    <Content Include="img\blog\2.jpg" />
+    <Content Include="img\blog\3.jpg" />
     <Content Include="img\blog\author.png" />
     <Content Include="img\blog\blog_1.png" />
     <Content Include="img\blog\blog_2.png" />
@@ -178,6 +195,12 @@
     <Content Include="img\blog\single_blog_4.png" />
     <Content Include="img\blog\single_blog_5.png" />
     <Content Include="img\blog\slide_thumb_1.png" />
+    <Content Include="img\categories\1.jpg" />
+    <Content Include="img\categories\2.jpg" />
+    <Content Include="img\categories\3.jpg" />
+    <Content Include="img\categories\4.jpg" />
+    <Content Include="img\categories\5.jpg" />
+    <Content Include="img\categories\6.jpg" />
     <Content Include="img\comment\comment_1.png" />
     <Content Include="img\comment\comment_2.png" />
     <Content Include="img\comment\comment_3.png" />
@@ -187,6 +210,11 @@
     <Content Include="img\courses\4.png" />
     <Content Include="img\courses\5.png" />
     <Content Include="img\courses\6.png" />
+    <Content Include="img\courses\7.jpg" />
+    <Content Include="img\courses\8.jpg" />
+    <Content Include="img\courses\f-1.jpg" />
+    <Content Include="img\courses\f-2.jpg" />
+    <Content Include="img\courses\single.jpg" />
     <Content Include="img\elements\a.jpg" />
     <Content Include="img\elements\a2.jpg" />
     <Content Include="img\elements\d.jpg" />
@@ -224,6 +252,12 @@
     <Content Include="img\news\1.png" />
     <Content Include="img\news\2.png" />
     <Content Include="img\news\3.png" />
+    <Content Include="img\page-bg\1.jpg" />
+    <Content Include="img\page-bg\2.jpg" />
+    <Content Include="img\page-bg\3.jpg" />
+    <Content Include="img\page-bg\4.jpg" />
+    <Content Include="img\page-bg\5.jpg" />
+    <Content Include="img\page-top-bg.jpg" />
     <Content Include="img\post\next.png" />
     <Content Include="img\post\post_1.png" />
     <Content Include="img\post\post_10.png" />
@@ -237,6 +271,7 @@
     <Content Include="img\post\post_9.png" />
     <Content Include="img\post\preview.png" />
     <Content Include="img\s.png" />
+    <Content Include="img\signup-bg.jpg" />
     <Content Include="img\support\support_bg.png" />
     <Content Include="img\team\1.png" />
     <Content Include="img\team\2.png" />
@@ -251,7 +286,14 @@
     <Content Include="Content\reset.map" />
     <Content Include="Content\style.map" />
     <Content Include="Content\theme-default.map" />
+    <Content Include="fonts\Futura.woff" />
+    <Content Include="fonts\Futura1.woff" />
+    <Content Include="fonts\WEB BASED RESULT PUBLICATION SYSTEM FOR EDUCATION BOARDS.pdf" />
+    <Content Include="icon-fonts\fontawesome-webfont.eot" />
+    <Content Include="icon-fonts\fontawesome-webfont.woff" />
+    <Content Include="icon-fonts\fontawesome-webfont.woff2" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\circle-progress.min.js" />
     <Content Include="Scripts\contact.js" />
     <Content Include="Scripts\gijgo.min.js" />
     <Content Include="Scripts\gmap3.min.js" />
@@ -270,6 +312,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\mail-script.js" />
     <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\mixitup.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\nice-select.min.js" />
     <Content Include="Scripts\owl.carousel.min.js" />
@@ -388,9 +431,9 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
