@@ -12,12 +12,12 @@ namespace UZEM.PROJECT.UI.MVC.Controllers
     public class IInstructorController : Controller
     {
         IUserService _userService;
-        IInstructorService _ınstructorService;
+        IInstructorService _instructorService;
 
-        public IInstructorController(IUserService userService,IInstructorService ınstructorService)
+        public IInstructorController(IUserService userService,IInstructorService instructorService)
         {
             _userService = userService;
-            _ınstructorService = ınstructorService;
+            _instructorService = instructorService;
         }
 
         [HttpGet]
@@ -36,7 +36,7 @@ namespace UZEM.PROJECT.UI.MVC.Controllers
                 return View("EgitmenBasvuru");
 
             }
-            _ınstructorService.Insert(ınstructor);
+            _instructorService.Insert(ınstructor);
 
             return View();
     
@@ -60,20 +60,32 @@ namespace UZEM.PROJECT.UI.MVC.Controllers
                 return View("EgitmenEkle");
 
             }
-            _ınstructorService.Insert(ınstructor);
+            _instructorService.Insert(ınstructor);
     
       
             return RedirectToAction("Index","Home");
 
 
         }
+        [HttpGet]
+        public ActionResult EgitmenProfili(InstructorClass ınstructor)
+        {
+            UserClass user = Session["Kullanici"] as UserClass;
 
+
+            var i = _instructorService.Get(ınstructor.ID);
+            return View("EgitmenProfili", i);
+
+
+        }
+
+        [HttpPost]
         public ActionResult EgitmenProfili()
         {
 
+
             return View();
         }
-
         public ActionResult KartBilgileri()
         {
             return View();
