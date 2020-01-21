@@ -1,24 +1,24 @@
 ﻿@{ ViewBag.Title = "_LayoutEgitmenProfil";
-    Layout = "~/Views/Shared/_LayoutWithUser.cshtml";}
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+    }
 
- 
-<div class="col-md-12">
-    <br />
-    <div class="col-md-3" style="background-color:lightgray; height:200px; float:left">
-        @Html.ActionLink("Profil","EgitmenProfili","IInstructor")
+<div class="row">
+    <div class="col-md-12">
         <br />
-        @Html.ActionLink("Kurs","Kurs","IInstructor")
-        <br />
-        @Html.ActionLink("Kart Bilgileri","KartBilgileri","IInstructor")
-        <br />
-        @Html.ActionLink("Hesap","Hesap","IInstructor")
+        <div class="col-md-3" style="background-color:#d82a4e; height:200px; float:left;">
+            <a href="~/IInstructor/EgitmenProfili" style="color:white;">Profil</a>
+            <br />
+            <a href="~/IInstructor/Kurs" style="color:white;">Kurs</a>
+            <br />
+            <a href="~/IInstructor/KartBilgileri" style="color:white;">Kart Bilgileri</a>
+            <br />
+            <a href="~/IInstructor/Hesap" style="color:white;">Hesap</a>
 
+        </div>
+        <div class="col-md-9" style="background-color:azure; float:left">
+            @RenderBody()
+        </div>
 
     </div>
-    <div class="col-md-9" style="background-color:azure; height:800px; float:left">
-        @RenderBody()
-
-
-    </div>
-
 </div>
+<br />
