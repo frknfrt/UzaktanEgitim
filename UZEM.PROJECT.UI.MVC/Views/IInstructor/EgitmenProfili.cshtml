@@ -4,47 +4,27 @@
     Layout = "~/Views/Shared/_LayoutEgitmenProfil.cshtml";
 }
 
-<h2>EgitmenProfili</h2>
+<h2>Eğitmen Profili</h2>
 
-<form class="container" method="post">
-    <div>
-        <label>Adınız : </label>
-        @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
-    </div>
+<form class="contact-form" method="post">
+    <input type="text" name="FirstName" placeholder="First Name">
+    <input type="text" name="LastName" placeholder="Last Name">
+    <input type="email" name="Email" placeholder="E-mail">
+    <textarea name="Note" placeholder="Note"></textarea>
+    <input type="text" name="Cv" placeholder="Cv">
+    <button id="CvDosya" class=" form-control btn-danger">Dosya Yükle</button>
     <br />
-    <div>
-        <label>Soyadız</label>
-        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
-    </div>
-    <br />
-    <div>
-        <label>E-mailiniz:</label>
-        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-    </div>
-    <br />
-    <div>
-        <label>Notunuz: </label>
-        @Html.TextAreaFor(m => m.Note, new { @class = "form-control" })
-    </div>
-    <br />
-    <div>
-        <label>Öz Geçmişiniz:</label>
-        @Html.TextBoxFor(m => m.Cv, new { @class = "form-control" })
-        <button id="CvDosya" class=" form-control btn-danger">Dosya Yükle</button>
-    </div>
-    <br />
-    <div>
-        <label>Video:</label>
-        @Html.TextBoxFor(m => m.PromotionalVideo, new { @class = "form-control" })
-        <button id="VideoDosya" class=" form-control btn-danger">Dosya Yükle</button>
-    </div>
-    <div><p>Özgeçmiş ve video yüklemek zorunludur.Eğitim videolarınızın tanıtım niteliğinde minimum 5 dakika maximum  20 dakika uzunluğunda videoları yükleyebilirsiniz  </p></div>
+    <input type="text" name="PromotionalVideo" placeholder="Promotional Video">
+    <button id="VideoDosya" class=" form-control btn-danger">Dosya Yükle</button>
+    <p>Özgeçmiş ve video yüklemek zorunludur.Eğitim videolarınızın tanıtım niteliğinde minimum 5 dakika maximum  20 dakika uzunluğunda videoları yükleyebilirsiniz  </p>
     <button id="kaydet" class=" form-control btn-info">Kaydet</button>
 
+
+
     <script>
-                $("#kaydet").click(function () {
-                    alert("Eğitmen Ekleme İşlemi Tamamlandı");
-                });
+        $("#kaydet").click(function () {
+            alert("Eğitmen Ekleme İşlemi Tamamlandı");
+        });
     </script>
 
 </form>
