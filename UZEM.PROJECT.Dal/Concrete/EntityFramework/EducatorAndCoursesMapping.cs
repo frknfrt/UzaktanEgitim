@@ -8,11 +8,12 @@ using UZEM_PROJECT.Model;
 
 namespace UZEM.PROJECT.Dal.Concrete.EntityFramework
 {
-   public class IntructorAndCourseMapping: EntityTypeConfiguration<IntructorAndCourseClass>
+   public  class EducatorAndCoursesMapping: EntityTypeConfiguration<EducatorAndCoursesClass>
     {
-        public IntructorAndCourseMapping()
+
+        public EducatorAndCoursesMapping()
         {
-            HasKey(a => new { a.IntructorId, a.CourseId });
+            HasKey(a => new { a.UserId, a.CourseId });
         }
     }
 }

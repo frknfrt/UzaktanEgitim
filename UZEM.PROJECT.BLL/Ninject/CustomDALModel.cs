@@ -14,7 +14,7 @@ namespace UZEM.PROJECT.BLL.Ninject
         public override void Load()
         {
             Bind<ICourseDAL>().To<CourseRepository>();
-            Bind<IInstructorDAL>().To<InstructorRepository>();
+           
             Bind<ILessonDAL>().To<LessonRepository>();
             Bind<IMainTitleDAL>().To<MainTitleRepository>();
             Bind<ITopTitleDAL>().To<TopTitleRepository>();

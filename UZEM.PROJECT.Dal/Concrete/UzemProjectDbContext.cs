@@ -12,13 +12,12 @@ namespace UZEM.PROJECT.Dal.Concrete
 {
    public class UzemProjectDbContext:DbContext
     {
-        public UzemProjectDbContext() : base(@"Server=.;Database=UzemProjectDb;Integrated Security=true;")
+        public UzemProjectDbContext() : base(@"Server=.\SQLEXPRESS;Database=UzemProjectDb;Integrated Security=true;")
         {
             Database.SetInitializer<UzemProjectDbContext>(new MyStrategy());
         }
         public DbSet<CourseClass> Courses { get; set; }
-        public DbSet<InstructorClass> Instructors { get; set; }
-        public DbSet<IntructorAndCourseClass> IntructorAndCourses { get; set; }
+      
         public DbSet<LessonClass> Lessons { get; set; }
         public DbSet<MainTitleClass> MainTitles { get; set; }
         public DbSet<TopTitleClass> TopTitles { get; set; }
@@ -28,7 +27,7 @@ namespace UZEM.PROJECT.Dal.Concrete
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<IncludeMetadataConvention>();
-            modelBuilder.Configurations.Add(new IntructorAndCourseMapping());
+      
             modelBuilder.Configurations.Add(new UserAndCourseMapping());
         }
     }

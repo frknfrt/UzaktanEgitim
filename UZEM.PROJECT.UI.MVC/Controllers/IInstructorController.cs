@@ -12,12 +12,12 @@ namespace UZEM.PROJECT.UI.MVC.Controllers
     public class IInstructorController : Controller
     {
         IUserService _userService;
-        IInstructorService _instructorService;
+      
 
-        public IInstructorController(IUserService userService,IInstructorService instructorService)
+        public IInstructorController(IUserService userService)
         {
             _userService = userService;
-            _instructorService = instructorService;
+           
         }
 
         [HttpGet]
@@ -29,14 +29,14 @@ namespace UZEM.PROJECT.UI.MVC.Controllers
         }
 
         [HttpPost]
-        public ActionResult EgitmenBasvuru(InstructorClass ınstructor)
+        public ActionResult EgitmenBasvuru(UserClass user)
         {
             if (!ModelState.IsValid)
             {
                 return View("EgitmenBasvuru");
 
             }
-            _instructorService.Insert(ınstructor);
+
 
             return View();
     
@@ -53,14 +53,14 @@ namespace UZEM.PROJECT.UI.MVC.Controllers
 
         }
         [HttpPost]
-        public ActionResult EgitmenEkle(InstructorClass ınstructor)
+        public ActionResult EgitmenEkle(UserClass user)
         {
             if (!ModelState.IsValid)
             {
                 return View("EgitmenEkle");
 
             }
-            _instructorService.Insert(ınstructor);
+           
     
       
             return RedirectToAction("Index","Home");
@@ -68,13 +68,9 @@ namespace UZEM.PROJECT.UI.MVC.Controllers
 
         }
         [HttpGet]
-        public ActionResult EgitmenProfili(InstructorClass ınstructor)
+        public ActionResult EgitmenProfili(UserClass user)
         {
-            UserClass user = Session["Kullanici"] as UserClass;
-
-
-            var i = _instructorService.Get(ınstructor.ID);
-            return View("EgitmenProfili", i);
+            return View();
 
 
         }

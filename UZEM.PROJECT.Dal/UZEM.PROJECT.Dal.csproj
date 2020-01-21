@@ -53,14 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\ICourseDAL.cs" />
-    <Compile Include="Abstract\IInstructorDAL.cs" />
     <Compile Include="Abstract\ILessonDAL.cs" />
     <Compile Include="Abstract\IMainTitleDAL.cs" />
     <Compile Include="Abstract\ITopTitleDAL.cs" />
     <Compile Include="Abstract\IUserDAL.cs" />
     <Compile Include="Concrete\EntityFramework\CourseRepository.cs" />
-    <Compile Include="Concrete\EntityFramework\InstructorRepository.cs" />
-    <Compile Include="Concrete\EntityFramework\IntructorAndCourseMapping.cs" />
+    <Compile Include="Concrete\EntityFramework\EducatorAndCoursesMapping.cs" />
     <Compile Include="Concrete\EntityFramework\LessonRepository.cs" />
     <Compile Include="Concrete\EntityFramework\MainTitleRepository.cs" />
     <Compile Include="Concrete\EntityFramework\TopTitleRepository.cs" />

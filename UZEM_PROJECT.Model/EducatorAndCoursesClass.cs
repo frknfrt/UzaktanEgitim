@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace UZEM_PROJECT.Model
 {
-   public class IntructorAndCourseClass
+    public class EducatorAndCoursesClass
     {
-        public int IntructorId { get; set; }
+        public int UserId { get; set; }
         public int CourseId { get; set; }
-        public InstructorClass Instructor { get; set; }
+
+
+
         public CourseClass Course { get; set; }
+        public UserClass User { get; set; }
 
     }
 }

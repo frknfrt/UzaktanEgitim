@@ -23,7 +23,7 @@ namespace UZEM_PROJECT.Model
         public bool IsActive { get; set; }      
         public TopTitleClass TopTitle { get; set; }
         public MainTitleClass MainTitle { get; set; }
-        public virtual List<InstructorClass> Instructors { get; set; }
+    
         public virtual List<LessonClass> Lessons { get; set; }
         public virtual List<UserClass> Users { get; set; }        
     }

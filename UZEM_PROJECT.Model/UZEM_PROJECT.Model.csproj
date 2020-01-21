@@ -43,8 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CourseClass.cs" />
-    <Compile Include="InstructorClass.cs" />
-    <Compile Include="IntructorAndCourseClass.cs" />
+    <Compile Include="EducatorAndCoursesClass.cs" />
     <Compile Include="LessonClass.cs" />
     <Compile Include="MainTitleClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
