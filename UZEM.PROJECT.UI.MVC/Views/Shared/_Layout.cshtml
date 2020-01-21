@@ -14,10 +14,10 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
 
     <!-- Stylesheets -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/owl.carousel.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
 
 
     <!--[if lt IE 9]>
@@ -37,7 +37,7 @@
             <div class="row">
                 <div class="col-lg-7 col-md-7">
                     <div class="site-logo">
-                        <img alt="" src="img/logo.png">
+                        <img alt="" src="~/img/logo.png">
                     </div>
                     <div class="nav-switch">
                         <i class="fa fa-bars"></i>
@@ -50,7 +50,7 @@
                             <li> <a href="~/IInstructor/EgitmenBasvuru">Eğitmen Olun </a></li>
                             <li> <a href="#">Sepet</a></li>
                         </ul>
-                    </nav>               
+                    </nav>
                 </div>
             </div>
             <div class="row">
@@ -69,7 +69,7 @@
     </header>
     <!-- Header section end -->
     <!-- Hero section -->
-    <section class="hero-section set-bg" style='background-image: url("img/bg.jpg");' data-setbg="img/bg.jpg">
+    <section class="hero-section set-bg" style='background-image: url("/img/bg.jpg");' data-setbg="/img/bg.jpg">
         <div class="container">
             <div class="hero-text text-white">
                 <h2>Get The Best Free Online Courses</h2>
@@ -98,7 +98,7 @@
                 <!-- categorie -->
                 <div class="col-lg-4 col-md-6">
                     <div class="categorie-item">
-                        <div class="ci-thumb set-bg" style='background-image: url("img/categories/1.jpg");' data-setbg="img/categories/1.jpg"></div>
+                        <div class="ci-thumb set-bg" style='background-image: url("/img/categories/1.jpg");' data-setbg="/img/categories/1.jpg"></div>
                         <div class="ci-text">
                             <h5>IT Development</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -109,7 +109,7 @@
                 <!-- categorie -->
                 <div class="col-lg-4 col-md-6">
                     <div class="categorie-item">
-                        <div class="ci-thumb set-bg" style='background-image: url("img/categories/2.jpg");' data-setbg="img/categories/2.jpg"></div>
+                        <div class="ci-thumb set-bg" style='background-image: url("/img/categories/2.jpg");' data-setbg="/img/categories/2.jpg"></div>
                         <div class="ci-text">
                             <h5>Web Design</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -120,7 +120,7 @@
                 <!-- categorie -->
                 <div class="col-lg-4 col-md-6">
                     <div class="categorie-item">
-                        <div class="ci-thumb set-bg" style='background-image: url("img/categories/3.jpg");' data-setbg="img/categories/3.jpg"></div>
+                        <div class="ci-thumb set-bg" style='background-image: url("/img/categories/3.jpg");' data-setbg="/img/categories/3.jpg"></div>
                         <div class="ci-text">
                             <h5>Illustration &amp; Drawing</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -131,7 +131,7 @@
                 <!-- categorie -->
                 <div class="col-lg-4 col-md-6">
                     <div class="categorie-item">
-                        <div class="ci-thumb set-bg" style='background-image: url("img/categories/4.jpg");' data-setbg="img/categories/4.jpg"></div>
+                        <div class="ci-thumb set-bg" style='background-image: url("/img/categories/4.jpg");' data-setbg="/img/categories/4.jpg"></div>
                         <div class="ci-text">
                             <h5>Social Media</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -142,7 +142,7 @@
                 <!-- categorie -->
                 <div class="col-lg-4 col-md-6">
                     <div class="categorie-item">
-                        <div class="ci-thumb set-bg" style='background-image: url("img/categories/5.jpg");' data-setbg="img/categories/5.jpg"></div>
+                        <div class="ci-thumb set-bg" style='background-image: url("/img/categories/5.jpg");' data-setbg="/img/categories/5.jpg"></div>
                         <div class="ci-text">
                             <h5>Photoshop</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -153,7 +153,7 @@
                 <!-- categorie -->
                 <div class="col-lg-4 col-md-6">
                     <div class="categorie-item">
-                        <div class="ci-thumb set-bg" style='background-image: url("img/categories/6.jpg");' data-setbg="img/categories/6.jpg"></div>
+                        <div class="ci-thumb set-bg" style='background-image: url("/img/categories/6.jpg");' data-setbg="/img/categories/6.jpg"></div>
                         <div class="ci-text">
                             <h5>Cryptocurrencies</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -187,10 +187,10 @@
     </section>
     <!-- search section end -->
     <!-- course section -->
-    <section class="course-section spad">       
-        <div class="course-warp">          
+    <section class="course-section spad">
+        <div class="course-warp">
             @RenderBody()
-        </div>     
+        </div>
     </section>
     <!-- course section end -->
     <!-- banner section -->
@@ -212,7 +212,7 @@
             <div class="footer-warp">
                 <div class="row">
                     <div class="widget-item">
-                        <ul>                          
+                        <ul>
                         </ul>
                     </div>
                     <div class="widget-item">
@@ -260,12 +260,12 @@
     </footer>
     <!-- footer section end -->
     <!--====== Javascripts & Jquery ======-->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/circle-progress.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/mixitup.min.js"></script>
+    <script src="~/Scripts/circle-progress.min.js"></script>
+    <script src="~/Scripts/owl.carousel.min.js"></script>
+    <script src="~/Scripts/main.js"></script>
 </body>
 </html>
 

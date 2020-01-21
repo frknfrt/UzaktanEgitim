@@ -63,7 +63,7 @@ namespace UZEM.PROJECT.UI.MVC.Controllers
                 ViewBag.Error = "Veritabanına ekleme hatası";
                 return View();
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Account");
         }
 
         //[HttpPost]

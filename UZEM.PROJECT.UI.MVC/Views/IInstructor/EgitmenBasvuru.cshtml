@@ -1,8 +1,30 @@
 ﻿@model UZEM_PROJECT.Model.InstructorClass
 @{
     ViewBag.Title = "EgitmenBasvuru";
-    Layout = "~/Views/Shared/_LayoutWithUser.cshtml";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
 }
+    <h2>Eğitmen Başvuru Formu</h2>
+    <div class="row">        
+        <form class="contact-form" method="post">
+            <input type="text" name="FirstName" placeholder="First Name" required>
+            <input type="text" name="LastName" placeholder="Last Name" required>
+            <input type="email" name="Email" placeholder="Your E-mail" required>
+            <textarea name="Note" placeholder="Note"></textarea>
+            <input type="text" name="Cv" placeholder="Cv">
+            <button id="CvDosya" class=" form-control btn-danger">Dosya Yükle</button>
+            <br />
+            <input type="text" name="PromotionalVideo" placeholder="Promotional Video">
+            <button id="VideoDosya" class=" form-control btn-danger">Dosya Yükle</button>
+            <p>Özgeçmiş ve video yüklemek zorunludur.Eğitim videolarınızın tanıtım niteliğinde minimum 5 dakika maximum  20 dakika uzunluğunda videoları yükleyebilirsiniz  </p>
+            <button id="kaydet" class=" form-control btn-info">Kaydet</button>
 
-<div>@Html.Partial("EgitmenBasvuruPartial", Model)</div>
+            <script>
+
+                $("#kaydet").click(function () {
+                    alert("Müşteri Ekleme İşlemi Tamamlandı");
+
+                });
+            </script>
+        </form>
+    </div>
 

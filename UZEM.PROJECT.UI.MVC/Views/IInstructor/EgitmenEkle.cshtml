@@ -3,27 +3,15 @@
 
 @{
     ViewBag.Title = "EgitmenEkle";
-
-
-
+     Layout = "~/Views/Shared/_LayoutLogin.cshtml";
 }
 
 
-<h2>EgitmenEkle</h2>
-<form class="form-group" method="post">
+<h2>Eğitmen Ekle</h2>
+<form class="contact-form" method="post">
 
-    
-    <div>
-        <label>Ad:</label>
-        <input type="text" class="form-control" name="name" value="@Model.FirstName" />
-
-    </div>
-    <div>
-        <label>Soyad:</label>
-        <input type="text" class="form-control" name="Soyad" value="@Model.LastName" />
-
-    </div>
-
+    <input type="text" name="FirstName" value="@Model.FirstName" placeholder="FirstName">
+    <input type="text" name="LastName" value="@Model.LastName" placeholder="LastName">
     <div>
         <label>Profil Fotoğrafı:</label>
         <input type="text" class="form-control" name="Ad" />
