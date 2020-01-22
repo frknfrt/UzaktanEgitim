@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UZEM_PROJECT.Core.Entity;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace UZEM_PROJECT.Model
 {
@@ -23,9 +25,10 @@ namespace UZEM_PROJECT.Model
         public bool IsActive { get; set; }      
         public TopTitleClass TopTitle { get; set; }
         public MainTitleClass MainTitle { get; set; }
-    
+        [Display(Name ="Eğitmen ID")]
+        public UserClass UserClass {get; set;}
         public virtual List<LessonClass> Lessons { get; set; }
-        public virtual List<UserClass> Users { get; set; }        
+     
     }
     public enum Level
     {
