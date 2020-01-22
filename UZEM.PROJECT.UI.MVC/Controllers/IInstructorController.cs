@@ -71,15 +71,11 @@ namespace UZEM.PROJECT.UI.MVC.Controllers
         public ActionResult EgitmenProfili(UserClass user)
         {
             return View();
-
-
         }
 
         [HttpPost]
         public ActionResult EgitmenProfili()
         {
-
-
             return View();
         }
         public ActionResult KartBilgileri()

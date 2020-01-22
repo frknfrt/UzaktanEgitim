@@ -62,7 +62,6 @@ namespace UZEM.PROJECT.UI.MVC.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<ICourseService>().To<CourseService>();
-            kernel.Bind<IInstructorService>().To<InstructorService>();
             kernel.Bind<ILessonService>().To<LessronService>();
             kernel.Bind<IMainTitleService>().To<MainTitleService>();
             kernel.Bind<ITopTitleService>().To<TopTitleService>();

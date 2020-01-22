@@ -12,7 +12,7 @@ namespace UZEM.PROJECT.Dal.Concrete
 {
    public class UzemProjectDbContext:DbContext
     {
-        public UzemProjectDbContext() : base(@"Server=.\SQLEXPRESS;Database=UzemProjectDb;Integrated Security=true;")
+        public UzemProjectDbContext() : base(@"Server=.;Database=UzemProjectDb;Integrated Security=true;")
         {
             Database.SetInitializer<UzemProjectDbContext>(new MyStrategy());
         }
