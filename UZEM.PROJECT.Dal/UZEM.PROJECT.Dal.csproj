@@ -58,7 +58,6 @@
     <Compile Include="Abstract\ITopTitleDAL.cs" />
     <Compile Include="Abstract\IUserDAL.cs" />
     <Compile Include="Concrete\EntityFramework\CourseRepository.cs" />
-    <Compile Include="Concrete\EntityFramework\EducatorAndCoursesMapping.cs" />
     <Compile Include="Concrete\EntityFramework\LessonRepository.cs" />
     <Compile Include="Concrete\EntityFramework\MainTitleRepository.cs" />
     <Compile Include="Concrete\EntityFramework\TopTitleRepository.cs" />
